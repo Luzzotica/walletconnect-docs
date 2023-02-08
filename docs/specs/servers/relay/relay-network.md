@@ -19,7 +19,6 @@ Relay Network is a publish-subscribe network that routes messages between client
 - Message is a utf8 string that is sent when publishing to be routed to its recipient.
 - Tag is an integer used as metadata to identify what type of message is being sent.
 - TTL is the maximum amount of time (in seconds) that a message should be cached if undelivered.
-- Prompt is a boolean flag that is used to identify if a message is relevant to registered webhooks.
 
 ## Message Id
 
