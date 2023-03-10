@@ -43,6 +43,11 @@ Session is a topic encrypted by a symmetric key derived using a key agreement es
       "accounts": [string],
       "methods": [string],
       "events": [string]
+    },
+    "<namespace_name:chain>" : {
+      "accounts": [string],
+      "methods": [string],
+      "events": [string]
     }
   },
   "requiredNamespaces": {
@@ -50,8 +55,26 @@ Session is a topic encrypted by a symmetric key derived using a key agreement es
       "chains": [string],
       "methods": [string],
       "events": [string]
+    },
+    "<namespace_name:chain>": {
+      "methods": [string],
+      "events": [string
     }
   },
+  "optionalNamespaces": {
+    "<namespace_name>" : {
+      "chains": [string],
+      "methods": [string],
+      "events": [string]
+    },
+    "<namespace_name:chain>": {
+      "methods": [string],
+      "events": [string
+    }
+  },
+  "sessionProperties": {
+    "<string>": string
+  }
 }
 ```
 
@@ -77,8 +100,26 @@ Proposal is sent by the proposer client to be approved or rejected by the respon
       "chains": [string],
       "methods": [string],
       "events": [string]
+    },
+    "<namespace_name:chain>": {
+      "methods": [string],
+      "events": [string
     }
   },
+  "optionalNamespaces": {
+    "<namespace_name>" : {
+      "chains": [string],
+      "methods": [string],
+      "events": [string]
+    },
+    "<namespace_name:chain>": {
+      "methods": [string],
+      "events": [string
+    }
+  },
+  "sessionProperties": {
+    "<string>": string
+  }
   "pairingTopic": string
 }
 ```
@@ -123,6 +164,11 @@ Settlement is sent by the responder after approval and it's broadcasted right af
   },
   "namespaces": {
     "<namespace_name>" : {
+      "accounts": [string],
+      "methods": [string],
+      "events": [string]
+    },
+    "<namespace_name:chain>" : {
       "accounts": [string],
       "methods": [string],
       "events": [string]
